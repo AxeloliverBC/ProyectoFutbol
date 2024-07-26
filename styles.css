@@ -1,0 +1,168 @@
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+.navbar-brand {
+    font-weight: bold;
+}
+
+/* Estilos para los héroes */
+.hero, .sub-hero {
+    padding: 100px 0;
+    background-size: cover;
+    background-position: center;
+}
+
+.hero {
+    background-image: url('IMAGENES/futbol22.jpeg');
+}
+
+/* Estilos para las cards */
+.card {
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* Estilos específicos para cada página */
+/* Noticias */
+.bg-secondary {
+    background-color: #6c757d;
+}
+
+/* Equipos */
+.bg-success {
+    background-color: #28a745;
+}
+
+/* Jugadores */
+.bg-info {
+    background-color: #17a2b8;
+}
+
+.player-card img {
+    height: 300px;
+    object-fit: cover;
+}
+
+/* Estadísticas */
+.bg-warning {
+    background-color: #ffc107;
+}
+
+/* Torneos */
+.bg-danger {
+    background-color: #dc3545;
+}
+
+.torneo-card img {
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .hero, .sub-hero {
+        padding: 50px 0;
+    }
+}
+
+
+.sub-hero {
+    background-image: url('ruta/a/tu/imagen-de-estadio.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    padding: 60px 0;
+}
+
+/* Estilos para las tarjetas de estadísticas */
+.card {
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+.card-header {
+    background-color: #4caf50; /* Verde césped */
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 1.2em;
+    font-weight: bold;
+    border-bottom: 5px solid #388e3c; /* Verde más oscuro */
+}
+
+.card-body {
+    background-color: white;
+    position: relative;
+}
+
+.card-body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('IMAGENES/balon.jpg');
+    background-size: 50px;
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    opacity: 0.1;
+}
+
+.table {
+    margin-bottom: 0;
+}
+
+.table th {
+    color: #1b5e20; /* Verde oscuro */
+    font-weight: bold;
+}
+
+.table td {
+    font-weight: bold;
+    color: #333;
+}
+
+/* Estilo para alternar filas */
+.table tr:nth-child(even) {
+    background-color: #f1f8e9; /* Verde muy claro */
+}
+
+/* Animación para los números */
+@keyframes countUp {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.table td {
+    animation: countUp 0.5s ease forwards;
+}
+
+/* Estilos para los gráficos */
+#golesChart, #tarjetasChart {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.card .btn-primary {
+    position: relative;
+    z-index: 1;
+}
+.card .btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+

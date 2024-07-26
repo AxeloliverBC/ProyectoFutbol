@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Equipos - Fútbol Mundial</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <audio id="ambienteEstadio1" loop>
+        <source src="AUDIO/Neymar.mp3" type="audio/mpeg">
+        Tu navegador no soporta el elemento de audio.
+    </audio>
+    <audio id="ambienteEstadio2">
+        <source src="AUDIO/balada.mp3" type="audio/mpeg">
+        Tu navegador no soporta el elemento de audio.
+    </audio>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Fútbol Mundial</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="noticias.html">Noticias</a></li>
+                    <li class="nav-item"><a class="nav-link" href="equipos.html">Equipos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="jugadores.html">Jugadores</a></li>
+                    <li class="nav-item"><a class="nav-link" href="estadisticas.html">Estadísticas</a></li>
+                    <li class="nav-item"><a class="nav-link" href="torneos.html">Torneos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="apuestas-simuladas.html">Apuestas Simuladas</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <!-- Mismo nav que en index.html -->
+    </nav>
+
+    <header class="sub-hero bg-success">
+        <div class="container text-center text-white">
+            <h1 data-aos="zoom-in">Equipos de Fútbol</h1>
+        </div>
+    </header>
+
+    <main class="container mt-5">
+        <div class="row">
+            <div class="col-md-4 mb-4" data-aos="flip-left">
+                <div class="card">
+                    <img src="IMAGENES/barca.png" card-img-top" alt="Equipo 1">
+                    <div class="card-body">
+                        <h5 class="card-title">FC Barcelona</h5>
+                        <p class="card-text">Club español fundado en 1899. Conocido por su estilo de juego "tiki-taka" y
+                            por haber formado a jugadores como Messi. Ha ganado numerosas Ligas españolas y Champions
+                            League.</p>
+                        <a href="https://www.fcbarcelona.es/es/" target="_blank" class="btn btn-primary">Ver
+                            detalles</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Más tarjetas de equipos -->
+            <div class="col-md-4 mb-4" data-aos="flip-left">
+                <div class="card">
+                    <img src="IMAGENES/real.png" class="card-img-top" alt="Equipo 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Real Madrid FC</h5>
+                        <p class="card-text">
+                            Fundado en 1902, es uno de los clubes más exitosos del mundo. Ha ganado más Champions League
+                            que cualquier otro equipo y es conocido por sus "Galácticos".</p>
+                        <a href="https://www.realmadrid.com/es-ES" target="_blank" class="btn btn-primary">Ver
+                            detalles</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4" data-aos="flip-left">
+                <div class="card">
+                    <img src="IMAGENES/bayer.png" class="card-img-top" alt="Equipo 1">
+                    <div class="card-body">
+                        <h5 class="card-title">FC Bayern Munich</h5>
+                        <p class="card-text">El gigante alemán, fundado en 1900. Domina la Bundesliga y es una potencia
+                            constante en Europa, con múltiples títulos de Champions League.</p>
+                        <a href="https://fcbayern.com/es" target="_blank" class="btn btn-primary">Ver detalles</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4" data-aos="flip-left">
+                <div class="card">
+                    <img src="IMAGENES/united.png" class="card-img-top" alt="Equipo 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Manchester United FC</h5>
+                        <p class="card-text">Fundado en 1878, es uno de los clubes más populares del mundo. Dominó la
+                            Premier League bajo Sir Alex Ferguson y ha ganado 3 Champions League.</p>
+                        <a href="https://www.manutd.com/es" class="btn btn-primary" target="_blank">Ver detalles</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4" data-aos="flip-left">
+                <div class="card">
+                    <img src="IMAGENES/city.png" target="_blank" class="card-img-top" alt="Equipo 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Manchester City FC</h5>
+                        <p class="card-text">Fundado en 1880, se ha convertido en una potencia en los últimos años
+                            gracias a una fuerte inversión. Conocido por su fútbol ofensivo y dominio en la Premier
+                            League reciente.</p>
+                        <a href="https://es.mancity.com/" target="_blank" class="btn btn-primary">Ver detalles</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4" data-aos="flip-left">
+                <div class="card">
+                    <img src="IMAGENES/milan.png" target="_blank" class="card-img-top" alt="Equipo 1">
+                    <div class="card-body">
+                        <h5 class="card-title">AC Milan</h5>
+                        <p class="card-text">Otro grande de Italia, fundado en 1899. Ha ganado 7 Champions League y es
+                            conocido por haber tenido algunas de las mejores defensas de la historia.</p>
+                        <a href="https://www.acmilan.com/en" target="_blank" class="btn btn-primary">Ver detalles</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4" data-aos="flip-left">
+                <div class="card">
+                    <img src="IMAGENES/inter.png" target="_blank" class="card-img-top" alt="Equipo 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Inter de Milan</h5>
+                        <p class="card-text">Club italiano fundado en 1908. Conocido por su defensa sólida y
+                            contraataques rápidos. Ha ganado la Serie A y la Champions League varias veces.</p>
+                        <a href="https://www.inter.it/en" target="_blank" class="btn btn-primary">Ver detalles</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4" data-aos="flip-left">
+                <div class="card">
+                    <img src="IMAGENES/liverpool.png" target="_blank" class="card-img-top" alt="Equipo 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Liverpool FC</h5>
+                        <p class="card-text">Club inglés fundado en 1892. Famoso por su himno "You'll Never Walk Alone"
+                            y por sus remontadas épicas. Ha ganado 6 Champions League.</p>
+                        <a href="https://www.liverpoolfc.com/es" target="_blank" class="btn btn-primary">Ver
+                            detalles</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4" data-aos="flip-left">
+                <div class="card">
+                    <img src="IMAGENES/ajax.jpg" target="_blank" class="card-img-top" alt="Equipo 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Ajax</h5>
+                        <p class="card-text">El gigante holandés, fundado en 1900. Conocido por su excelente cantera y
+                            por el "fútbol total". Ha producido muchas estrellas del fútbol mundial.</p>
+                        <a href="https://spanish.ajax.nl/" target="_blank" class="btn btn-primary">Ver detalles</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <footer class="bg-dark text-white text-center py-3 mt-5">
+        <p>&copy; 2024 Fútbol Mundial. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+    <script src="audioScript.js"></script>
+    <script>
+        AOS.init();
+    </script> 
+</body>
+
+</html>
